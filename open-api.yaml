@@ -1,0 +1,36 @@
+openapi: 3.0.0
+
+info:
+  title: SctInst API
+  version: "1"
+
+servers:
+  - url: http://127.0.0.1:3000
+    description: Dev server
+
+paths:
+  /test:
+    get:
+      operationId: getTest
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TestResponse'
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-username
+  schemas:
+    TestResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        description:
+          type: string

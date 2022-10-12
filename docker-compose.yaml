@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  php:
+    container_name: php
+    image: 786403377595.dkr.ecr.eu-west-3.amazonaws.com/trz_php_81:latest
+    volumes:
+      - ./:/var/www/html
+      - ~/.composer:/root/.composer
+
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    ports:
+      - "3000:80"
+    links:
+      - php

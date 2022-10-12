@@ -1,0 +1,8 @@
+<?php
+
+return [
+    'openapi-file' => __DIR__ . '/open-api.yaml',
+    'namespace' => 'App\Sdk',
+    'directory' => __DIR__ . '/src/sdk',
+    'clean-generated' => true
+];
