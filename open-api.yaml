@@ -5,12 +5,49 @@ info:
   version: "1"
 
 servers:
-  - url: http://127.0.0.1:3000
+  - url: 'https://niania.requestcatcher.com'
     description: Dev server
 
 paths:
   /test:
     get:
+      parameters:
+        - in: header
+          name: Accept
+          schema:
+            type: string
+        - in: header
+          name: Accept-Encoding
+          schema:
+            type: string
+        - in: header
+          name: Connection
+          schema:
+            type: string
+        - in: header
+          name: Content-Length
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          schema:
+            type: string
+        - in: header
+          name: Postman-Token
+          schema:
+            type: string
+        - in: header
+          name: User-Agent
+          schema:
+            type: string
+        - in: header
+          name: X-Username
+          schema:
+            type: string
+        - in: header
+          name: Host
+          schema:
+            type: string
       operationId: getTest
       responses:
         200:

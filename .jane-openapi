@@ -2,7 +2,7 @@
 
 return [
     'openapi-file' => __DIR__ . '/open-api.yaml',
-    'namespace' => 'App\Sdk',
-    'directory' => __DIR__ . '/src/sdk',
+    'namespace' => 'App\sdk',
+    'directory' => __DIR__ . '/app/sdk',
     'clean-generated' => true
 ];
