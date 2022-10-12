@@ -1,6 +1,9 @@
 # temp-jane-test
 
-https://niania.requestcatcher.com/ -> utilise ce request catcher
+- make start
+- make composer-install
+- GET http://localhost on postman
+- see https://niania.requestcatcher.com/
 
 
 les header accepté (optionenel)
